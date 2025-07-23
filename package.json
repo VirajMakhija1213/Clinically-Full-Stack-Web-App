@@ -1,0 +1,35 @@
+{
+  "name": "frontend_project",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "parcel index.html",
+    "server": "cd server && npm run dev",
+    "dev": "concurrently -n \"client,server\" -c \"bgBlue,bgYellow\" \"npm start\" \"npm run server\"",
+    "build": "parcel build index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@react-google-maps/api": "^2.20.7",
+    "@reduxjs/toolkit": "^2.8.2",
+    "axios": "^1.10.0",
+    "concurrently": "^9.2.0",
+    "parcel": "^2.15.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-hot-toast": "^2.5.2",
+    "react-icons": "^5.5.0",
+    "react-leaflet": "^5.0.0",
+    "react-otp-input": "^3.1.1",
+    "react-redux": "^9.2.0",
+    "react-router": "^7.7.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "buffer": "^6.0.3",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17"
+  }
+}
