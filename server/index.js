@@ -11,7 +11,7 @@ app.use(express.json());
 const cookieParser = require("cookie-parser");
 app.use(
 	cors({
-		origin:"http://localhost:1234",
+		origin:"https://clinically-viraj.vercel.app",
 		credentials:true,
 	})
 )
