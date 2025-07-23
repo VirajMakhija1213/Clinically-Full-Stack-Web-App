@@ -23,7 +23,7 @@ exports.resetPasswordToken=async(req,res)=>{
 			},
 			{ new: true }
 		);
-        const url = `http://localhost:1234/update-password/${token}`;
+        const url = `https://clinically-viraj.vercel.app/update-password/${token}`;
 
 		await mailSender(
 			email,
