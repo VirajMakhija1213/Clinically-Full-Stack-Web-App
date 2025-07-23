@@ -25,7 +25,7 @@ export default function Home() {
 
         try {
             // Replace with your actual API endpoint from your API configuration
-            const API_URL = "http://localhost:4000/api/v1/search-clinics-by-location";
+            const API_URL = "https://clinically-full-stack-web-app.onrender.com/api/v1/search-clinics-by-location";
             const response = await axios.post(API_URL, { query: searchQuery });
             toast.success(response.data.message);
             
