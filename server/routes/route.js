@@ -10,7 +10,7 @@ const { resetPasswordToken, resetPassword } = require("../controllers/resetPassw
 //Link the controllers
 router.post("/login",login);
 router.post("/signup",signup)
-router.post("/addClinic",auth,isDoctor,addClinic)
+router.post("/addClinic",addClinic)
 router.get("/showClinics",getAllClinics)
 router.get("/searchNearbyClinics",auth,isPatient,searchNearbyClinics)
 router.post("/resetPasswordToken",resetPasswordToken)
